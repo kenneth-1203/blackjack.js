@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BlackJack</title>
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Exa|Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="stylesheet" href="style\blackjack.css">
+    .css">
+</head>
+<body>
+    
+    <section>
+        <div class="navbar">
+            <h1 id="title">Blackjack</h1>
+        </div>
+    </section>
+
+    <section>
+        <div class="content">
+            
+            <div class="dealer">
+                <div id="dealer">Dealer</div>
+
+                <span class="hidden" id="hidden-1"></span>
+                <span class="hidden" id="hidden-2"></span>
+
+                <span class="card" id="dealer-card-1">
+                    <div>
+
+                        <i class="fas top" id="dealer-top-1">
+                            <div class="cardNum" id="dealer-ltop-1">A</div>
+                        </i>
+
+                        <i class="fas bottom" id="dealer-bottom-1">
+                            <div class="cardNum" id="dealer-lbottom-1">A</div>
+                        </i>
+
+                    </div>
+                </span>
+
+                <span class="card" id="dealer-card-2">
+                    <div>
+
+                        <i class="fas top" id="dealer-top-2">
+                            <div class="cardNum" id="dealer-ltop-2">A</div>
+                        </i>
+
+                        <i class="fas bottom" id="dealer-bottom-2">
+                            <div class="cardNum" id="dealer-lbottom-2">A</div>
+                        </i>
+
+                    </div>
+                </span>
+
+                <span class="card" id="dealer-card-3">
+                    <div>
+
+                        <i class="fas top" id="dealer-top-3">
+                            <div class="cardNum" id="dealer-ltop-3">A</div>
+                        </i>
+
+                        <i class="fas bottom" id="dealer-bottom-3">
+                            <div class="cardNum" id="dealer-lbottom-3">A</div>
+                        </i>
+
+                    </div>
+                </span>
+
+                <span class="card" id="dealer-card-4">
+                    <div>
+
+                        <i class="fas top" id="dealer-top-4">
+                            <div class="cardNum" id="dealer-ltop-4">A</div>
+                        </i>
+
+                        <i class="fas bottom" id="dealer-bottom-4">
+                            <div class="cardNum" id="dealer-lbottom-4">A</div>
+                        </i>
+
+                    </div>
+                </span>
+
+                <span class="card" id="dealer-card-5">
+                    <div>
+
+                        <i class="fas top" id="dealer-top-5">
+                            <div class="cardNum" id="dealer-ltop-5">A</div>
+                        </i>
+
+                        <i class="fas bottom" id="dealer-bottom-5">
+                            <div class="cardNum" id="dealer-lbottom-5">A</div>
+                        </i>
+
+                    </div>
+                </span>
+
+            </div>
+            <div class="player">
+                <div id="player">Player</div>
+
+                <span class="card" id="player-card-1">
+                        <div>
+    
+                            <i class="fas top" id="player-top-1">
+                                <div class="cardNum" id="player-ltop-1">K</div>
+                            </i>
+    
+                            <i class="fas bottom" id="player-bottom-1">
+                                <div class="cardNum" id="player-lbottom-1">K</div>
+                            </i>
+    
+                        </div>
+                    </span>
+
+                    <span class="card" id="player-card-2">
+                        <div>
+    
+                            <i class="fas top" id="player-top-2">
+                                <div class="cardNum" id="player-ltop-2">K</div>
+                            </i>
+    
+                            <i class="fas bottom" id="player-bottom-2">
+                                <div class="cardNum" id="player-lbottom-2">K</div>
+                            </i>
+    
+                        </div>
+                    </span>
+
+                    <span class="card" id="player-card-3">
+                        <div>
+    
+                            <i class="fas top" id="player-top-3">
+                                <div class="cardNum" id="player-ltop-3">K</div>
+                            </i>
+    
+                            <i class="fas bottom" id="player-bottom-3">
+                                <div class="cardNum" id="player-lbottom-3">K</div>
+                            </i>
+    
+                        </div>
+                    </span>
+
+                    <span class="card" id="player-card-4">
+                        <div>
+    
+                            <i class="fas top" id="player-top-4">
+                                <div class="cardNum" id="player-ltop-4">K</div>
+                            </i>
+    
+                            <i class="fas bottom" id="player-bottom-4"> 
+                                <div class="cardNum" id="player-lbottom-4">K</div>
+                            </i>
+    
+                        </div>
+                    </span>
+
+                    <span class="card" id="player-card-5">
+                        <div>
+    
+                            <i class="fas top" id="player-top-5">
+                                <div class="cardNum" id="player-ltop-5">K</div>
+                            </i>
+    
+                            <i class="fas bottom" id="player-bottom-5">
+                                <div class="cardNum" id="player-lbottom-5">K</div>
+                            </i>
+    
+                        </div>
+                    </span>
+
+            </div>
+
+        </div>
+        <div class="navbar" id="player-info">
+            <div class="status">
+                <div><div id="player-hand">Hand: 21</div></div>
+                <div id="player-total">Total: $500</div>
+            </div>
+            <div class="score">
+                <div id="player-win">Wins: 1</div>
+                <div id="player-loss">Loss: 2</div>
+            </div>
+            <div class="currency">
+                <div id="player-in">In: $500</div>
+                <div id="player-out">Out: $0</div>
+            </div>
+            <div class="button btn-hit">Hit</div>
+            <div class="button btn-stand">Stand</div>
+        </div>
+    </section>
+
+    <script src="lib\blackjack.js"></script>
+</body>
+</html>
