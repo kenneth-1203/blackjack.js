@@ -78,8 +78,10 @@ body {
     left: 575px;
 }
 
-#dealer-hand {
-    font-size: 15px;
+#dealer-hand { font-size: 15px; }
+.anim.dealer-hand { 
+    transition: 1s;
+    opacity: 100;
 }
 
 #player-total {
@@ -88,12 +90,12 @@ body {
     left: 630px;
 }
 
-.card, .hidden {
+.card {
     background: url('card/cards/card-back.png') center;
     background-size: 111px, 156px;
     position: absolute;
     display: none;
-    top: -25px;
+    top: 0px;
     width: 111px;
     height: 156px;
     border-radius: 5px;
@@ -169,19 +171,64 @@ body {
     background: #911919;
 }
 
-.hidden { 
-    display: block; 
-    z-index: 2;
-}
-
-#dealer-card-1, #hidden-1 { left: 130px; }
-#dealer-card-2, #hidden-2 { left: 260px; }
-#dealer-card-3 { left: 390px; }
-#dealer-card-4 { left: 520px; }
-#dealer-card-5 { left: 650px; }
+#card1 { left: 130px; top: -100px; }
+#card2 { left: 260px; top: -100px; }
+#card3 { left: 390px; top: -100px; }
+#card4 { left: 520px; top: -100px; }
+#card5 { left: 650px; top: -100px; }
 
 #player-card-1 { left: 130px; top: -75px; }
 #player-card-2 { left: 260px; top: -75px; }
 #player-card-3 { left: 390px; top: -75px; }
 #player-card-4 { left: 520px; top: -75px; }
 #player-card-5 { left: 650px; top: -75px; }
+
+.flip-container { perspective: 1000; margin: 0 auto; position: absolute;}
+   
+.flip-container .flipper.flip {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 111px;
+    height: 156px;
+}
+
+.flipper {
+    transition: 1.2s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.anim { opacity: 0; }
+.anim.fade-in {
+    transition: 1.2s;
+    opacity: 100;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+.front {
+    background: url('card/cards/card-back.png') center;
+    z-index: 2;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background: #f8f8f8;
+}
+
+.back-logo {
+    position: absolute;
+    top: 40px;
+    left: 90px;
+    width: 160px;
+    height: 117px;
+    background: url(http://davidwalsh.name/demo/logo.png) 0 0 no-repeat;
+}
