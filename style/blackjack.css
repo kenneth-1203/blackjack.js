@@ -157,13 +157,11 @@ body {
 }
 
 @keyframes navbar-final {
-    0% {}
     50% {
         left: 36%;
         top: 0;
         width: 360px;
         height: 80px;
-        background: linear-gradient(to right, rgba(128, 18, 43, 0.3), rgba(128, 18, 43, 1), rgba(128, 18, 43, 0.3));
         border-radius: 5px;
         border-left: 1px solid whitesmoke;
         border-right: 1px solid whitesmoke;
@@ -173,7 +171,6 @@ body {
         left: 0;
         width: 1345px;
         height: 30px;
-        background: #55081a;
         border: none;
         border-radius: 0;
     }
@@ -214,7 +211,7 @@ body {
     left: 0;
     margin: 0;
     padding: 5px 0 5px 15px;
-    background: #55081a;
+    background: linear-gradient(to right, rgba(128, 18, 43, 0.3), rgba(128, 18, 43, 1), rgba(128, 18, 43, 0.3));
     font-family: 'Unica One', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -288,7 +285,8 @@ body {
     background: url('card/cards/card-back.png') center;
     background-size: 111px, 156px;
     position: absolute;
-    display: none;
+    opacity: 0;
+    transition: 1s;
     top: 0px;
     width: 111px;
     height: 156px;
@@ -315,7 +313,8 @@ body {
 }
 
 .top .cardNum, .bottom .cardNum { 
-    display: none;
+    opacity: 0;
+    transition: 1s;
     font-family: 'Card Characters Narrow Figures', sans-serif;
     font-size: 16px;
     transform: scaleX(0.68);
