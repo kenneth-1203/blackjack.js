@@ -14,6 +14,45 @@ body {
     z-index: 3;
     transition: 1s;
 }
+.help {
+    opacity: 0;
+    z-index: 0;
+}
+.initial.help-menu {
+    animation: help-menu 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes help-menu {
+    0% { 
+        z-index: 5;
+        opacity: 1; 
+    }
+    100% {
+        z-index: 5;
+        opacity: 1;
+        top: 0;
+        left: 40.5%;
+        font-size: 50px;
+        letter-spacing: -2px;
+    }
+}
+
+.help-context {
+    width: 1000px;
+    font-family: 'Chakra Petch', sans-serif;
+    color: whitesmoke;
+    font-size: 15px;
+    text-align: center;
+    padding: 130px 0 0 160px;
+}
+.help-context h1 { 
+    width: 130px;
+    text-align: center;
+    margin-left: 440px;
+    border-bottom: 1px solid lightgrey;
+ }
+
 .initial { 
     z-index: 5;
     opacity: 0;
@@ -32,7 +71,7 @@ body {
     transition: 1s;
 }
 
-.button.play-btn, .button.about-btn {
+.button.play-btn, .button.about-btn, .button.help-btn {
     background: linear-gradient(to right, rgba(140, 22, 48, 0.1), rgba(140, 22, 48, 0.5), rgba(140, 22, 48, 0.1));
     position: absolute;
     left: 42%;
@@ -44,13 +83,19 @@ body {
     animation-delay: 1.2s;
     animation-fill-mode: forwards;
 }
-.button.about-btn { 
+.button.help-btn {
     top: 45%;
     animation: fade-in 1s;
     animation-delay: 1.2s;
     animation-fill-mode: forwards;
 }
-.button.play-btn:hover, .button.about-btn:hover {
+.button.about-btn { 
+    top: 50%;
+    animation: fade-in 1s;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+}
+.button.play-btn:hover, .button.about-btn:hover, .button.help-btn:hover {
     background: linear-gradient(to right, rgba(140, 22, 48, 0.1), rgba(140, 22, 48, 1), rgba(140, 22, 48, 0.1));
     border-left: 1px solid white;
     border-right: 1px solid white;
@@ -59,12 +104,12 @@ body {
     transition: 0.3s;
 }
 
-.button.play-btn:active, .button.about-btn:active {
+.button.play-btn:active, .button.about-btn:active, .button.help-btn:active {
     border-color: grey;
     color: grey;
 }
 
-.button.play-btn.active, .button.about-btn.active {
+.button.play-btn.active, .button.about-btn.active, .button.help-btn.active {
     animation: fade-out 1s;
     animation-timing-function: ease-out;
 }
@@ -438,4 +483,11 @@ body {
 @keyframes float-anim {
     0% {}
     100% { top: -190px }
+}
+
+#dealer-bust, #player-bust {
+    opacity: 0;
+    transition: 1s;
+    color: #b01a1a;
+    text-shadow: 0 0 1px black;
 }
