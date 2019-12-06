@@ -39,12 +39,15 @@ body {
 }
 
 .help-context {
+    opacity: 0;
     width: 1000px;
     font-family: 'Chakra Petch', sans-serif;
     color: whitesmoke;
     font-size: 15px;
     text-align: center;
     padding: 130px 0 0 160px;
+    animation: fade-in 1s;
+    animation-fill-mode: forwards;
 }
 .help-context h1 { 
     width: 130px;
