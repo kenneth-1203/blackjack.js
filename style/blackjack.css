@@ -424,12 +424,6 @@ body {
 #player-card-2 { left: 260px; top: -75px; }
 #player-card-3 { left: 390px; top: -75px; }
 #player-card-4 { left: 520px; top: -75px; }
-<<<<<<< HEAD
-<<<<<<< HEAD
-#player-card-5 { left: 650px; top: -75px; }
-=======
-=======
-
 #player-card-5 { left: 650px; top: -75px; }
 
 .flip-container { perspective: 1000; margin: 0 auto; position: absolute;}
@@ -493,7 +487,6 @@ body {
     0% {}
     100% { top: -190px }
 }
-
 
 #dealer-bust, #player-bust {
     opacity: 0;
