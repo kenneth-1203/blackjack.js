@@ -1,120 +1,7 @@
 body {
+    /* background: #FB607F; */
     background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAT0lEQVQoU2MUFxf/zwAFDi9fMhwQF4dxwTQjTAG6ZObLlwzTxcUhCnBJgk0IZ2D4j2wsTCfMHrgVIAF0SZDJcAXYJEEmgxXgkkTxBS6vAgCuhjE7RYgm/wAAAABJRU5ErkJggg==);
     max-height: 768px;
-}
-
-.main-menu {
-    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAT0lEQVQoU2MUFxf/zwAFDi9fMhwQF4dxwTQjTAG6ZObLlwzTxcUhCnBJgk0IZ2D4j2wsTCfMHrgVIAF0SZDJcAXYJEEmgxXgkkTxBS6vAgCuhjE7RYgm/wAAAABJRU5ErkJggg==);
-    width: 1345px;
-    height: 657px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-left: 15px;
-    z-index: 3;
-    transition: 1s;
-}
-.help {
-    opacity: 0;
-    z-index: 0;
-}
-.initial.help-menu {
-    animation: help-menu 1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes help-menu {
-    0% { 
-        z-index: 5;
-        opacity: 1; 
-    }
-    100% {
-        z-index: 5;
-        opacity: 1;
-        top: 0;
-        left: 40.5%;
-        font-size: 50px;
-        letter-spacing: -2px;
-    }
-}
-
-.help-context {
-    opacity: 0;
-    width: 1000px;
-    font-family: 'Chakra Petch', sans-serif;
-    color: whitesmoke;
-    font-size: 15px;
-    text-align: center;
-    padding: 130px 0 0 160px;
-    animation: fade-in 1s;
-    animation-fill-mode: forwards;
-}
-.help-context h1 { 
-    width: 130px;
-    text-align: center;
-    margin-left: 440px;
-    border-bottom: 1px solid lightgrey;
- }
-
-.initial { 
-    z-index: 5;
-    opacity: 0;
-    position: absolute; 
-    font-size: 70px;
-    letter-spacing: -5;
-    top: 102px;
-    left: 510px;
-    animation: fade-in 1s;
-    animation-delay: 0.85s;
-    animation-fill-mode: forwards;
-}
-.final {
-    animation: title-final 1.2s;
-    animation-fill-mode: forwards;
-    transition: 1s;
-}
-
-.button.play-btn, .button.about-btn, .button.help-btn {
-    background: linear-gradient(to right, rgba(140, 22, 48, 0.1), rgba(140, 22, 48, 0.5), rgba(140, 22, 48, 0.1));
-    position: absolute;
-    left: 42%;
-    top: 40%;
-    width: 200px;
-    border: none;
-    opacity: 0;
-    animation: fade-in 1s;
-    animation-delay: 1.2s;
-    animation-fill-mode: forwards;
-}
-.button.help-btn {
-    top: 45%;
-    animation: fade-in 1s;
-    animation-delay: 1.2s;
-    animation-fill-mode: forwards;
-}
-.button.about-btn { 
-    top: 50%;
-    animation: fade-in 1s;
-    animation-delay: 1.2s;
-    animation-fill-mode: forwards;
-}
-.button.play-btn:hover, .button.about-btn:hover, .button.help-btn:hover {
-    background: linear-gradient(to right, rgba(140, 22, 48, 0.1), rgba(140, 22, 48, 1), rgba(140, 22, 48, 0.1));
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    width: 210px;
-    left: 41.55%;
-    transition: 0.3s;
-}
-
-.button.play-btn:active, .button.about-btn:active, .button.help-btn:active {
-    border-color: grey;
-    color: grey;
-}
-
-.button.play-btn.active, .button.about-btn.active, .button.help-btn.active {
-    animation: fade-out 1s;
-    animation-timing-function: ease-out;
 }
 
 .content {
@@ -125,142 +12,17 @@ body {
     margin: 0px 16.66%;
 }
 
-.navbar.navbar-anim { 
-    background: linear-gradient(to right, rgba(128, 18, 43, 0.3), rgba(128, 18, 43, 1), rgba(128, 18, 43, 0.3));
-    position: absolute;
-    left: 36%;
-    top: 150px;
-    width: 360px;
-    height: 80px;
-    border-left: 1px solid whitesmoke;
-    border-right: 1px solid whitesmoke;
-    border-radius: 5px; 
-    opacity: 1;
-    z-index: 4; 
-    animation: navbar-anim 1.5s;
-    animation-timing-function: ease-in-out;
-}
-
-.navbar.navbar-final {
-    animation: navbar-final 1.2s;
-    animation-fill-mode: forwards;
-    transition: 1s;
-}
-
-@keyframes fade-in {
-    0% { opacity: 0; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-@keyframes fade-out {
-    0% { 
-        opacity: 1;
-        height: 18.5px;
-        border-left: 1px solid whitesmoke;
-        border-right: 1px solid whitesmoke;
-    }
-    50% {
-        opacity: 0.5;
-        width: 0px;
-        left: 50%;
-        height: 18.5px;
-    }
-    100% { 
-        opacity: 0;
-        width: 0px;
-        left: 50%;
-        height: 18.5px;
-        padding: 5px 0;
-        border-left: 1px solid rgba(128, 128, 128, 0);
-        border-right: 1px solid rgba(128, 128, 128, 0);
-    }
-}
-
-@keyframes navbar-anim {
-    0% { 
-        position: absolute;
-        left: 36%;
-        top: 300px;
-        width: 0;
-        height: 0;
-        border-radius: 5px; 
-        opacity: 1;
-    }
-    50% { 
-        top: 300px;
-        width: 360px;
-        height: 0px;
-        border-radius: 5px;
-    }
-    100% { 
-        position: absolute;
-        left: 36%;
-        top: 150px;
-        width: 360px;
-        height: 80px;
-        border-radius: 5px; 
-        opacity: 1;
-    }
-}
-
-@keyframes navbar-final {
-    50% {
-        left: 36%;
-        top: 0;
-        width: 360px;
-        height: 80px;
-        border-radius: 5px;
-        border-left: 1px solid whitesmoke;
-        border-right: 1px solid whitesmoke;
-    }
-    100% {
-        top: 0;
-        left: 0;
-        width: 1345px;
-        height: 30px;
-        border: none;
-        border-radius: 0;
-    }
-}
-
-@keyframes title-final {
-    0% {opacity: 1;}
-    50% {
-        top: -15px;
-        left: 510px;
-        font-size: 70px; 
-        letter-spacing: -5;
-        margin: 17px 0;
-    }
-    100% {
-        opacity: 1;
-        font-size: 30px;
-        letter-spacing: -2;
-        margin: 0;
-        left: 44%;
-        top: 0;
-        z-index: 5;
-    }
-}
-
-.title { 
-    font-family: 'Chakra Petch', sans-serif;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: whitesmoke; 
-    text-shadow: 1px 5px 7px rgba(0,0,0,0.5);
-}
-
-.navbar {
+#title, .navbar {
     position: absolute;
     width: 1345px;
     top: 0;
     left: 0;
     margin: 0;
-    padding: 5px 0 5px 15px;
-    background: linear-gradient(to right, rgba(128, 18, 43, 0.3), rgb(128, 18, 43, 1), rgba(128, 18, 43, 0.3));
-    font-family: 'Unica One', sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    background: #690e23;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     color: whitesmoke;
@@ -273,9 +35,9 @@ body {
     margin: none;
     top: 60px;
     left: 20%;
-    font-family: 'Unica One', sans-serif;
+    font-family: 'Lexend Exa', sans-serif;
     font-weight: 700;
-    font-size: 1.8em;
+    font-size: 1.5em;
     color: whitesmoke;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
@@ -317,25 +79,18 @@ body {
     left: 575px;
 }
 
-#dealer-hand { font-size: 20px; }
-.anim.dealer-hand { 
-    transition: 1s;
-    opacity: 100;
-}
-
 #player-total {
     position: absolute;
     top: 50%;
     left: 630px;
 }
 
-.card {
+.card, .hidden {
     background: url('card/cards/card-back.png') center;
     background-size: 111px, 156px;
     position: absolute;
-    opacity: 0;
-    transition: 1s;
-    top: 0px;
+    display: none;
+    top: -25px;
     width: 111px;
     height: 156px;
     border-radius: 5px;
@@ -361,8 +116,7 @@ body {
 }
 
 .top .cardNum, .bottom .cardNum { 
-    opacity: 0;
-    transition: 1s;
+    display: none;
     font-family: 'Card Characters Narrow Figures', sans-serif;
     font-size: 16px;
     transform: scaleX(0.68);
@@ -384,28 +138,26 @@ body {
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family: 'Unica One', sans-serif;
+	font-family: 'Lexend Exa', sans-serif;
 	font-size:15px;
 	padding:5px 10px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #2f6627;
 }
 
-.btn-stand:hover { background: #b01a1a; transition: 0.3s }
-.btn-hit:hover { background: #1aba58; transition: 0.3s }
+.btn-stand:hover { background: #b01a1a; }
+.btn-hit:hover { background: #1aba58; }
 
 .btn-hit:active {
     background-color: #14783b;
     border: 1px solid #bababa;
     color: #bababa;
-    transition: 0.3s;
 }
 
 .btn-stand:active {
     background-color:#751515;
     border: 1px solid #bababa;
     color: #bababa;
-    transition: 0.3s;
 }
 
 .btn-stand {
@@ -414,83 +166,19 @@ body {
     background: #911919;
 }
 
-#card1 { left: 130px; top: -100px; }
-#card2 { left: 260px; top: -100px; }
-#card3 { left: 390px; top: -100px; }
-#card4 { left: 520px; top: -100px; }
-#card5 { left: 650px; top: -100px; }
+.hidden { 
+    display: block; 
+    z-index: 2;
+}
+
+#dealer-card-1, #hidden-1 { left: 130px; }
+#dealer-card-2, #hidden-2 { left: 260px; }
+#dealer-card-3 { left: 390px; }
+#dealer-card-4 { left: 520px; }
+#dealer-card-5 { left: 650px; }
 
 #player-card-1 { left: 130px; top: -75px; }
 #player-card-2 { left: 260px; top: -75px; }
 #player-card-3 { left: 390px; top: -75px; }
 #player-card-4 { left: 520px; top: -75px; }
 #player-card-5 { left: 650px; top: -75px; }
-
-.flip-container { perspective: 1000; margin: 0 auto; position: absolute;}
-   
-.flip-container .flipper.flip {
-    transform: rotateY(180deg);
-}
-
-.flip-container, .front, .back {
-    width: 111px;
-    height: 156px;
-}
-
-.flipper {
-    transition: 1.2s;
-    transform-style: preserve-3d;
-    position: relative;
-}
-
-.anim { opacity: 0; }
-.anim.fade-in {
-    transition: 1.2s;
-    opacity: 1;
-}
-
-.front, .back {
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 5px;
-}
-
-.front {
-    background: url('card/cards/card-back.png') center;
-    z-index: 2;
-}
-
-.back {
-    transform: rotateY(180deg);
-    background: #f8f8f8;
-}
-
-.display-lose, .display-win, .display-draw {
-    position: absolute;
-    display: none;
-    opacity: 0;
-    width: 220px;
-    top: -180px;
-    left: 160px;
-    font-size: 60px;
-    text-align: center;
-    text-shadow: 0 0 10px #b4002a, 0 0 8px #a50e31, 0 0 5px #FFF, 0 0 5px;
-    animation: float-anim .5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease;
-}
-
-@keyframes float-anim {
-    0% {}
-    100% { top: -190px }
-}
-
-#dealer-bust, #player-bust {
-    opacity: 0;
-    transition: 1s;
-    color: #b01a1a;
-    text-shadow: 0 0 1px black;
-}
