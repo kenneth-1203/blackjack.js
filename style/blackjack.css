@@ -3,11 +3,6 @@ body {
     max-height: 768px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> parent of c3b4ed0... .
 .main-menu {
     background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAT0lEQVQoU2MUFxf/zwAFDi9fMhwQF4dxwTQjTAG6ZObLlwzTxcUhCnBJgk0IZ2D4j2wsTCfMHrgVIAF0SZDJcAXYJEEmgxXgkkTxBS6vAgCuhjE7RYgm/wAAAABJRU5ErkJggg==);
     width: 1345px;
@@ -19,8 +14,6 @@ body {
     z-index: 3;
     transition: 1s;
 }
-<<<<<<< HEAD
-=======
 .help {
     opacity: 0;
     z-index: 0;
@@ -63,7 +56,6 @@ body {
     border-bottom: 1px solid lightgrey;
  }
 
->>>>>>> parent of c3b4ed0... .
 .initial { 
     z-index: 5;
     opacity: 0;
@@ -82,11 +74,7 @@ body {
     transition: 1s;
 }
 
-<<<<<<< HEAD
-.button.play-btn, .button.about-btn {
-=======
 .button.play-btn, .button.about-btn, .button.help-btn {
->>>>>>> parent of c3b4ed0... .
     background: linear-gradient(to right, rgba(140, 22, 48, 0.1), rgba(140, 22, 48, 0.5), rgba(140, 22, 48, 0.1));
     position: absolute;
     left: 42%;
@@ -98,19 +86,12 @@ body {
     animation-delay: 1.2s;
     animation-fill-mode: forwards;
 }
-<<<<<<< HEAD
-.button.about-btn { 
-=======
 .button.help-btn {
->>>>>>> parent of c3b4ed0... .
     top: 45%;
     animation: fade-in 1s;
     animation-delay: 1.2s;
     animation-fill-mode: forwards;
 }
-<<<<<<< HEAD
-.button.play-btn:hover, .button.about-btn:hover {
-=======
 .button.about-btn { 
     top: 50%;
     animation: fade-in 1s;
@@ -118,7 +99,6 @@ body {
     animation-fill-mode: forwards;
 }
 .button.play-btn:hover, .button.about-btn:hover, .button.help-btn:hover {
->>>>>>> parent of c3b4ed0... .
     background: linear-gradient(to right, rgba(140, 22, 48, 0.1), rgba(140, 22, 48, 1), rgba(140, 22, 48, 0.1));
     border-left: 1px solid white;
     border-right: 1px solid white;
@@ -127,28 +107,16 @@ body {
     transition: 0.3s;
 }
 
-<<<<<<< HEAD
-.button.play-btn:active, .button.about-btn:active {
-=======
 .button.play-btn:active, .button.about-btn:active, .button.help-btn:active {
->>>>>>> parent of c3b4ed0... .
     border-color: grey;
     color: grey;
 }
 
-<<<<<<< HEAD
-.button.play-btn.active, .button.about-btn.active {
-=======
 .button.play-btn.active, .button.about-btn.active, .button.help-btn.active {
->>>>>>> parent of c3b4ed0... .
     animation: fade-out 1s;
     animation-timing-function: ease-out;
 }
 
-<<<<<<< HEAD
->>>>>>> parent of c8c1fb2... Added help menu
-=======
->>>>>>> parent of c3b4ed0... .
 .content {
     position: relative;
     top: 32px;
@@ -461,7 +429,7 @@ body {
 #player-card-5 { left: 650px; top: -75px; }
 =======
 =======
->>>>>>> parent of c3b4ed0... .
+
 #player-card-5 { left: 650px; top: -75px; }
 
 .flip-container { perspective: 1000; margin: 0 auto; position: absolute;}
@@ -525,9 +493,7 @@ body {
     0% {}
     100% { top: -190px }
 }
-<<<<<<< HEAD
->>>>>>> parent of c8c1fb2... Added help menu
-=======
+
 
 #dealer-bust, #player-bust {
     opacity: 0;
@@ -535,4 +501,3 @@ body {
     color: #b01a1a;
     text-shadow: 0 0 1px black;
 }
->>>>>>> parent of c3b4ed0... .
